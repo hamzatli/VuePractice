@@ -9,16 +9,16 @@
   <body>
 
 
-    <h1>Computed Properties</h1>
+    <h1>Dynamic CSS</h1>
 
     <div id="vue-app">
 
-      <button v-on:click = 'A++' >Add to A</button>
-      <button v-on:click = 'B++' >Add to B</button>
+      <button v-on:click="available = !available"> Change color</button>
+      <div  v-bind:class="{available:available}" >
+        <span>Color</span>
+      </div>
 
-      <p>A - {{A}} </p>
-      <p>B - {{B}} </p>
-      <p> A + B = {{Sum}}</p>
+
 
 
 
