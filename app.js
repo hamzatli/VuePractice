@@ -1,16 +1,20 @@
-new Vue({
+new Vue ({
   el: '#vue-app',
-  data:{
-    name: 'İsmayıl',
-    website: 'https://www.google.com',
-    websiteTag: '  <a href="https://www.google.com">Google</a>'
+  data: {
+    number: '25',
+    x:0,
+    y:0
   },
   methods: {
-    salute: function(time){
+    Add:function() {
+      this.number++;
+    },
 
-      return 'Good ' + time + ' ' + this.name;
+    UpdateXY:function(event){
+
+      this.x = event.offsetX;
+      this.y = event.offsetY;
+
     }
   }
-
-
 });
