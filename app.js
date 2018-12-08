@@ -3,7 +3,11 @@ new Vue ({
 
   el:'#vue-app',
   data:{
-    available: false
+    objects: [
+      {name: 'Ismayil' , age: 20 },
+      {name: 'Valid' , age: 25 }
+
+    ]
   }
 
 });

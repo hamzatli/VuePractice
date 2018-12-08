@@ -9,14 +9,13 @@
   <body>
 
 
-    <h1>Dynamic CSS</h1>
+    <h1>FOR CONDITION </h1>
 
     <div id="vue-app">
 
-      <button v-on:click="available = !available"> Change color</button>
-      <div  v-bind:class="{available:available}" >
-        <span>Color</span>
-      </div>
+      <ul>
+        <li v-for = "object in objects" > name - {{object.name}}  ; age - {{object.age}}</li>
+      </ul>
 
 
 
