@@ -9,17 +9,19 @@
   <body>
 
 
-    <h1>Event</h1>
+    <h1>Computed Properties</h1>
 
     <div id="vue-app">
 
-    <button v-on:click = "Add" >Add</button>
-    <button @click = 'number--' >Subtract</button>
+      <button v-on:click = 'A++' >Add to A</button>
+      <button v-on:click = 'B++' >Add to B</button>
 
-    <h1>{{number}}</h1>
+      <p>A - {{A}} </p>
+      <p>B - {{B}} </p>
+      <p> A + B = {{Sum}}</p>
 
 
-  <div id="canvas" v-on:mousemove = "UpdateXY">{{x}},{{y}}</div>
+
 </div>
 
 

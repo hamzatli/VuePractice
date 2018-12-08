@@ -1,20 +1,20 @@
+
 new Vue ({
-  el: '#vue-app',
+
+  el:'#vue-app',
   data: {
-    number: '25',
-    x:0,
-    y:0
+    A: '',
+    B: ''
+
   },
-  methods: {
-    Add:function() {
-      this.number++;
-    },
 
-    UpdateXY:function(event){
+  computed: {
+    Sum:function(){
 
-      this.x = event.offsetX;
-      this.y = event.offsetY;
+      return this.A + this.B
 
     }
   }
+
+
 });
