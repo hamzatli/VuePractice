@@ -13,10 +13,12 @@
 
     <div id="vue-app">
 
-      <ul>
-        <li v-for = "object in objects" > name - {{object.name}}  ; age - {{object.age}}</li>
-      </ul>
+    <h1>refs</h1>
 
+    <input type="text" ref="input">
+    <button type="button" v-on:click= "readrefs" > subnit</button>
+
+    <p> output is  {{output}}</p>
 
 
 

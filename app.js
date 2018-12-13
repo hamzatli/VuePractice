@@ -2,12 +2,18 @@
 new Vue ({
 
   el:'#vue-app',
-  data:{
-    objects: [
-      {name: 'Ismayil' , age: 20 },
-      {name: 'Valid' , age: 25 }
+  data: {
 
-    ]
-  }
+    output: ""
 
+  },
+
+methods: {
+
+    readrefs:function() {
+      console.log(this.$refs.input.value);
+      this.output = this.$refs.input.value;
+    }
+
+}
 });
